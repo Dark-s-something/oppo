@@ -51,8 +51,8 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-⚠️ 注意事项
 
+#⚠️ 注意事项
 1. Blobs 依赖：为确保 FBE 解密正常，需从官方固件提取 keystore.qcom.so 等加密库，并放入 recovery/root/vendor/lib/hw 与 recovery/root/vendor/lib64/hw。
 
 2. 内核要求：内核需开启 CONFIG_FS_ENCRYPTION、CONFIG_FS_ENCRYPTION_INLINE_CRYPT 等选项，否则无法解密。
